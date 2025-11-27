@@ -1,0 +1,6 @@
+data/test/
+└── labels_test.csv
+
+id_imagine,clasa
+img_410,OK
+img_512,DEFECT

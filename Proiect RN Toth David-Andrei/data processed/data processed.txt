@@ -1,0 +1,8 @@
+data/processed/
+└── metadata_processed.csv
+
+id_imagine,fisura_norm,rugina_norm,textura_neteda,textura_aspra,iluminare_buna,iluminare_slaba,clasa
+img_001,0.02,0.015,1,0,1,0,OK
+img_002,0.00,0.02,1,0,1,0,OK
+img_101,0.35,0.182,0,1,0,1,DEFECT
+img_102,0.41,0.227,0,1,0,1,DEFECT

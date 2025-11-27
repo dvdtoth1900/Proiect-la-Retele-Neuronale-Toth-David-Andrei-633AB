@@ -1,0 +1,10 @@
+data/train/
+├── images/
+│ ├── OK/
+│ └── DEFECT/
+└── labels_train.csv
+
+id_imagine,clasa
+img_001,OK
+img_002,OK
+img_101,DEFECT
