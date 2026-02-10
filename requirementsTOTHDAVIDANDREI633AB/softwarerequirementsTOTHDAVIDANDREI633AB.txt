@@ -1,0 +1,9 @@
+CERINTE SOFTWARE (DEPENDINTE):
+------------------------------
+1. Mediul de rulare: LabVIEW 2023 (sau versiunea utilizata)
+2. Module Critice: 
+   - NI Vision Development Module (VDM) -> NECESITA LICENTA ACTIVA
+   - NI-IMAQdx (pentru achizitie imagine)
+3. Librarii: NI_Vision_Development_Module.lvlib
+------------------------------
+NOTA: Eroarea "SubVI is not executable" indica faptul ca VDM nu este licentiat corespunzator pe acest sistem.

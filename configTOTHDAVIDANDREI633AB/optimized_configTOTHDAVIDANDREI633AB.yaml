@@ -1,0 +1,7 @@
+image_processing:
+  color_threshold: [80, 150]  # Valorile din nodul tău LabVIEW
+  particle_filter_min: 60     # Limita pentru eliminarea zgomotului
+  morphology_operations: "Open"
+neural_network:
+  input_shape: [224, 224, 3]
+  batch_size: 16

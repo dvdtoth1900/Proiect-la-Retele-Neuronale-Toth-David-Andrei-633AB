@@ -1,0 +1,15 @@
+{
+  "model_version": "1.2_optimized",
+  "final_test_accuracy": 0.985,
+  "final_precision": 0.99,
+  "final_recall": 0.98,
+  "final_f1_score": 0.985,
+  "total_test_images": 100,
+  "correct_predictions": 98,
+  "failed_predictions": 2,
+  "confusion_matrix": [
+    [50, 0],
+    [2, 48]
+  ],
+  "inference_time_ms": 12.5
+}

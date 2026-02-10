@@ -1,0 +1,5 @@
+DESCRIERE MODUL ACHIZITIE:
+- Functii utilizate: IMAQ Create, IMAQ ReadFile.
+- Sursa date: Folderul 'data/raw/'.
+- Tip imagine: RGB (Color) pentru citirea initiala a pieselor auto.
+- Rol: Incarca secvential imaginile pieselor pentru a fi procesate de restul sistemului.

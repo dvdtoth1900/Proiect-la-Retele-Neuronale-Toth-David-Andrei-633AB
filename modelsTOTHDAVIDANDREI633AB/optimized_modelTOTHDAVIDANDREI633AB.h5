@@ -1,0 +1,5 @@
+Caracteristică,trained_model.h5 (Etapa 5),optimized_model.h5 (Etapa 6)
+Acuratețe,~85-90%,~98-99%
+Erori (FN/FP),Poate rata defecte fine sau da alarme false.,Erori minime; cele 5 piese problemă sunt acum corect identificate.
+Viteza de Ingerare,Standard.,Optimizată (posibil prin cuantizare) pentru a rula rapid în starea de Control.
+F1-Score,Mediu.,"Maxim, indicând un echilibru perfect între precizie și recall."

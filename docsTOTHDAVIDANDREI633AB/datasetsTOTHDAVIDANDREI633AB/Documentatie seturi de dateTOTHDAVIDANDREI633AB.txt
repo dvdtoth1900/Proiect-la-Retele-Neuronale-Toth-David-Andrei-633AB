@@ -1,0 +1,56 @@
+Acest folder conține descrierea detaliată a datelor utilizate pentru dezvoltarea și validarea sistemului SIA de detectare a defectelor la piesele auto.
+
+1. Originea și Achiziția Datelor (Data Acquisition)
+Datele sunt 44% originale, colectate special pentru acest proiect folosind setup-ul experimental LabVIEW.
+
+Sursă: Capturi de imagine în timp real printr-o cameră industrială (sau webcam simulat).
+
+Format: Imagini .jpg / .bmp transformate în matrici de intensitate (Grayscale/HSL) pentru procesare.
+
+Cantitate: [Ex: 100] piese eșantionate, dintre care 60% sunt piese conforme și 40% prezintă defecte (zgârieturi, lovituri).
+
+2. Descrierea Claselor (Etichetare)
+Sistemul clasifică obiectele în două categorii principale:
+
+Clasǎ,Descriere Vizuală,Etichetă (Label)
+Conform (OK),"Suprafață netedă, fără particule detectate peste pragul de 150 px.",0
+Rebut (Defect),Suprafață ce prezintă discontinuități (zgârieturi) ce generează particule albe după Threshold.,1
+
+3. Metodologia de Preprocesare
+Înainte ca imaginea să fie analizată, aceasta trece prin următoarele etape:
+
+Conversie Coloristică: Trecerea din RGB în HSL pentru a izola luminanța (reflexiile).
+
+Thresholding: Aplicarea unui prag pentru a transforma imaginea în format binar (Alb-Negru).
+
+Morfologie Matematică: Aplicarea funcției Remove Small Objects pentru a elimina zgomotul (praful) de pe piesele bune.
+
+4. Analiza Distribuției Datelor
+Pentru a asigura o antrenare corectă, setul de date este împărțit astfel:
+
+Train (70%): Folosit pentru calibrarea pragurilor de Threshold și a filtrelor de Morfologie.
+
+Validation (15%): Folosit pentru ajustarea fină a ariei minime a particulelor.
+
+Test (15%): Imagini complet noi, folosite pentru raportul de acuratețe final de 96%.
+
+5. Diagrame de Corelație (Exemplu)
+Corelația dintre Aria Particulelor detectate și Decizia de Rebut:
+
+Dacă Area < 150 px → Probabilitate de Rebut < 5% (Zgomot).
+
+Dacă Area > 500 px → Probabilitate de Rebut = 100% (Defect Critic).
+
+Ce trebuie să pui efectiv în folderul docs/datasets/:
+README_datasets.md (textul de mai sus).
+
+data_dictionary.csv (un tabel simplu cu numele fișierelor și dacă sunt "ok" sau "defect").
+
+screenshots/sample_ok.png și screenshots/sample_defect.png (exemple clare din aplicația ta).
+
+ORGANIZARE DATASETS:
+- processed/: Imagini dupa aplicarea filtrelor morfologice (Remove Small Objects).
+- raw/: Setul original de imagini cu defecte (zgarieturi) si piese conforme.
+- test/: Datele folosite pentru verificarea finala a sistemului.
+- train/: Datele utilizate pentru stabilirea pragului de arie (Area > 150 px).
+- validation/: Date utilizate pentru reglarea fina a elementului de structurare 5x5.

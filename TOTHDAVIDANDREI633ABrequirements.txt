@@ -1,0 +1,13 @@
+# Software de Bază
+LabVIEW 2020 SP1 (sau versiunea ta) - 32-bit/64-bit
+NI Vision Development Module 2020 (pentru funcțiile IMAQ)
+NI-IMAQdx (pentru achiziția de la camera video)
+
+# Toolkit-uri de Deep Learning (în funcție de ce ai folosit)
+NI Machine Learning Toolkit
+sau
+Deep Learning Toolkit for LabVIEW (by Digilent/JKI)
+
+# Drivere Hardware
+NI-DAQmx 20.0 (dacă folosești senzori externi)
+

@@ -1,0 +1,9 @@
+PRAGURI DECIZIE (LOGICA CLASIFICATOR):
+--------------------------------------
+Criteriu_Principal: Area (Aria Particulei)
+Prag_Minim_Defect: 150 pixeli
+Prag_Maxim_Zgomot: 149 pixeli
+Actiune_Defect: LED ON + String "Piesa este DEFECTA"
+Actiune_OK: LED OFF + String "Piesa nu are erori"
+--------------------------------------
+Versiune_Model: 1.0.2 (Optimizat pentru Etapa 6)

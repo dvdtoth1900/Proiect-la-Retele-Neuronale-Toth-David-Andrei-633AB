@@ -1,0 +1,5 @@
+Exp_ID,Threshold_Low,Threshold_High,Min_Particle_Size,Accuracy,F1_Score,Observații
+1,50,200,20,0.82,0.79,Prea mult zgomot detectat.
+2,100,140,100,0.85,0.81,Ratează defectele mici.
+3,80,150,60,0.98,0.97,Configurația optimă (Etapa 6).
+4,80,150,150,0.91,0.88,Ignoră zgârieturile medii.

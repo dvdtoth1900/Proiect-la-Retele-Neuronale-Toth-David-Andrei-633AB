@@ -1,0 +1,5 @@
+Caracteristică,untrained_model.h5,trained_model.h5
+Arhitectură,CNN (aceeași),CNN (aceeași)
+Ponderi,Aleatorii (nu știe nimic),Învățate (știe să recunoască defecte brute)
+Eroare (Loss),Foarte mare,Scăzută
+Acuratețe,~50% (ghicește),~85-90% (are nevoie de optimizare)s

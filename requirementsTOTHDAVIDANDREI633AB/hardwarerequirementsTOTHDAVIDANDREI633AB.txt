@@ -1,0 +1,6 @@
+CERINTE HARDWARE:
+-----------------
+1. Camera: Camera industriala USB sau Webcam (rezolutie min. 640x480).
+2. Procesor: Intel i5 / AMD Ryzen 5 (recomandat pentru procesare in timp real).
+3. Memorie RAM: Minim 8 GB.
+4. Iluminare: Sistem de iluminare inelar (Ring Light) pentru a minimiza reflexiile metalice false pe piese.

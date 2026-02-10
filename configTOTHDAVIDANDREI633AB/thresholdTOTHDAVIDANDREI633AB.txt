@@ -1,0 +1,11 @@
+VALORI PRAG SEGMENTARE (COLOR THRESHOLD):
+-----------------------------------------
+Model_Culoare: RGB
+Rosu_Min: 60
+Rosu_Max: 150
+Verde_Min: 90
+Verde_Max: 180
+Albastru_Min: 90
+Albastru_Max: 250
+-----------------------------------------
+Nota: Aceste valori asigura izolarea zgarieturilor de culoarea deschisa pe fundalul metalic inchis.

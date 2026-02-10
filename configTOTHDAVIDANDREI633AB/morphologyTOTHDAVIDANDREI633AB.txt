@@ -1,0 +1,8 @@
+CONFIGURARE FILTRE MORFOLOGICE:
+-------------------------------
+Operatie: Remove Small Objects
+Structuring_Element_Size: 5x5
+Tip_Element: Square (Pătrat)
+Iteratii: 1
+-------------------------------
+Scop: Eliminarea reflexiilor parazite identificate in Error List ca fiind "zgomot optic".

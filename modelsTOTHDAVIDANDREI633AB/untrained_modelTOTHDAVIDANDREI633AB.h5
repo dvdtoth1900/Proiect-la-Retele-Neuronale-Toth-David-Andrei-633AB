@@ -1,0 +1,8 @@
+Nume Strat,Tip Strat,Configurație / Parametri,Rol în Proiectul Tău
+Input,InputLayer,224×224×1,Primește imaginea Grayscale de la IMAQ Create.
+Conv_1,Conv2D,"32 filtre, kernel 3×3",Detectează marginile și texturile metalice ale piesei.
+Pool_1,MaxPooling,2×2,Reduce dimensiunea pentru a accelera viteza în starea de Control.
+Conv_2,Conv2D,"64 filtre, kernel 3×3","Identifică formele specifice defectelor (zgârieturi, lovituri)."
+Flatten,Flatten,-,Transformă harta de trăsături într-un vector pentru decizie.
+Dense_1,Fully Connected,128 neuroni (ReLU),Analizează relația dintre particulele detectate de filtrele IMAQ.
+Output,Dense (Softmax),2 neuroni,Clasifică piesa: Bună sau Rebut.
