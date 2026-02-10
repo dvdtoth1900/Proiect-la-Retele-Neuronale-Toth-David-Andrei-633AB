@@ -1,6 +1,0 @@
-data/validation/
-└── labels_validation.csv
-
-id_imagine,clasa
-img_203,OK
-img_305,DEFECT
