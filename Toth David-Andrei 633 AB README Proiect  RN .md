@@ -296,7 +296,7 @@ Exp 1,					Configurația din Etapa 5 	,			0.70,		0.70,		10 min,			Referință
 Exp 2,					LR 0.005 → 0.001 ,				0.80,		0.79,		12 min,			Convergență lină
 Exp 3,					Augmentări HSL (Luminanță ±15%),			0.95,		0.93,		20 min,			BEST
 
-Justificare alegere configurație finală: Am ales Exp 3 ca model final. Creșterea performanței se datorează augmentării robuste a datelor (simularea variațiilor de iluminare industrială). 
+Justificare alegere configurație finală: Am ales Exp 4 ca model final. Creșterea performanței se datorează augmentării robuste a datelor (simularea variațiilor de iluminare industrială). 
 Aceasta a permis rețelei să ignore micile variații de reflexie ale metalului și să se concentreze pe trăsăturile geometrice ale zgârieturii.
 
 2. Actualizarea Aplicației Software în Etapa 6
@@ -333,67 +333,6 @@ Datele bat Modelul: Augmentarea inteligentă a luminanței a adus un beneficiu m
 Contextul contează: Într-o fabrică, un "False Negative" este mult mai costisitor decât un "False Positive". 
 
 Preprocessing-ul este cheia: 80% din succesul proiectului a depins de calitatea segmentării HSL din Etapa 3.
-
-## Structura Repository-ului la Finalul Etapei 6
-
-**Structură COMPLETĂ și FINALĂ:**
-
-```
-proiect-rn-[prenume-nume]/
-├── README.md                               # Overview general proiect (FINAL)
-├── etapa3_analiza_date.md                  # Din Etapa 3
-├── etapa4_arhitectura_sia.md               # Din Etapa 4
-├── etapa5_antrenare_model.md               # Din Etapa 5
-├── etapa6_optimizare_concluzii.md          # ← ACEST FIȘIER (completat)
-│
-├── docs/
-│   ├── state_machine.png                   # Din Etapa 4
-│   ├── loss_curve.png                      # Din Etapa 5
-│   ├── confusion_matrix_optimized.png      # NOU - OBLIGATORIU
-│   ├── results/                            # NOU - Folder vizualizări
-│   │   ├── metrics_evolution.png           # NOU - Evoluție Etapa 4→5→6
-│   │   ├── learning_curves_final.png       # NOU - Model optimizat
-│   │   └── example_predictions.png         # NOU - Grid exemple
-│   ├── optimization/                       # NOU - Grafice optimizare
-│   │   ├── accuracy_comparison.png
-│   │   └── f1_comparison.png
-│   └── screenshots/
-│       ├── ui_demo.png                     # Din Etapa 4
-│       ├── inference_real.png              # Din Etapa 5
-│       └── inference_optimized.png         # NOU - OBLIGATORIU
-│
-├── data/                                   # Din Etapa 3-5 (NESCHIMBAT)
-│   ├── raw/
-│   ├── generated/
-│   ├── processed/
-│   ├── train/
-│   ├── validation/
-│   └── test/
-│
-├── src/
-│   ├── data_acquisition/                  
-│   ├── preprocessing/                     
-│   ├── neural_network/
-│   │   ├── README.md                     
-│   └── app/
-│       └── Proiect RN Toth David-Andrei 633 AB.vi
-│
-├── models/
-│   ├── untrained_model.h5                  # Din Etapa 4
-│   ├── trained_model.h5                    # Din Etapa 5
-│   ├── optimized_model.h5                  # NOU - OBLIGATORIU
-│
-├── results/
-│   ├── training_history.csv                # Din Etapa 5
-│   ├── test_metrics.json                   # Din Etapa 5
-│   ├── optimization_experiments.csv        # NOU - OBLIGATORIU
-│   ├── final_metrics.json                  # NOU - Metrici model optimizat
-│
-├── config/
-│   └── optimized_config.yaml               # NOU - Config model final
-│
-├── requirements.txt                        # Actualizat
-
 
 5. Plan Post-Feedback (Examen)
 În urma feedback-ului, voi:
